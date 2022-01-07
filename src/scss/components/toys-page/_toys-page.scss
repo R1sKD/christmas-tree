@@ -1,0 +1,20 @@
+@import "filter-controls/filter-controls";
+@import "toy-card/toy-card";
+@import "noUiSlider";
+
+.toys-page {
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+
+.toysearch-error {
+  font-size: 30px;
+  text-align: center;
+}

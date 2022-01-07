@@ -1,0 +1,52 @@
+.toy-card {
+  width: 292px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid $main-color--light;
+  background-color: $bg-light;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  &.active .toy-card__mark {
+    background-color: #cbb77a;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 90px;
+    height: 112px;
+    object-fit: contain;
+  }
+
+  &__info {
+    font-size: 20px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    top: 210px;
+    width: 80px;
+    height: 40px;
+    background-color: $main-color--light;
+    left: -8px;
+    border-radius: 10px;
+  }
+}
